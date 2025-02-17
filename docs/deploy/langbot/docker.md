@@ -25,7 +25,12 @@ cd LangBot
 ```bash
 docker compose up
 ```
-
+如果上面的这个命令有问题，
+可以试试下面这个命令
+```bash
+docker-compose up -d
+```
+好像不同的docker 的compose 命令 不一样， 如果是用的是wmdoker 可以试试这个带—的命令
 首次启动会输出创建配置文件的提示，请继续按照文件配置。
 
 容器会映射`5300`端口供 WebUI 使用，您可以访问`http://127.0.0.1:5300`查看 WebUI。  
